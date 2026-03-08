@@ -13,7 +13,7 @@ variable "domain_name" {
 
 variable "ami_id" {
   type    = string
-  default = "ami-09c813fb71547fc4f"
+  default = "ami-09c813fb71547fc4f" #Redhat-9-DevOps-Practice - ami-0220d79f3f480ecf5
 }
 
 variable "ec2_tags" {

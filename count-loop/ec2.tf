@@ -1,6 +1,6 @@
 resource "aws_instance" "terraforma" {
   count = length(var.instances)  #inbuilt functions
-  ami           = var.ami_id #RHEL-9-DevOps-Practice 
+  ami           = var.ami_id #RHEL-9-DevOps-Practice Redhat-9-DevOps-Practice -ami-0220d79f3f480ecf5
   instance_type = var.environemnt == "dev" ? "t3.micro" : "t3.medium"
   # instance_type = var.instance_typo
   vpc_security_group_ids = [aws_security_group.allow_all_tf.id]
